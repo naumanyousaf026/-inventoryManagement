@@ -1,16 +1,68 @@
-# React + Vite
+# Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inventory Management System is a web-based application developed to manage products efficiently with secure admin authentication.  
+This system uses an SQL database for data storage and supports complete CRUD operations for product management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Admin Authentication (Login System)
+- Product Management (CRUD Operations)
+  - Add Product
+  - Update Product
+  - Delete Product
+  - View Products
+- SQL Database Integration
+- Secure Data Handling
+- Custom Designed Frontend UI
+- Admin Dashboard with Sidebar
+- Responsive Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend:
+- Node.js / PHP / Java (as per project)
+
+### Database:
+- SQL (MySQL)
+
+### Frontend:
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## Admin Authentication
+
+- Admin login system implemented using SQL database.
+- Credentials are verified from database.
+- Only authenticated admin can access dashboard.
+- Unauthorized users cannot perform CRUD operations.
+
+---
+
+## Database Tables
+
+### Admin Table:
+- id  
+- username  
+- password  
+
+### Products Table:
+- id  
+- product_name  
+- price  
+- quantity  
+- category  
+
+---
+
+## How to Run Project
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
